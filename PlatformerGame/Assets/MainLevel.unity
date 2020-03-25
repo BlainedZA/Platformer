@@ -122,6 +122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 27741246}
   - component: {fileID: 27741245}
+  - component: {fileID: 27741248}
   - component: {fileID: 27741247}
   m_Layer: 0
   m_Name: BackgroundMountainsBlue
@@ -200,6 +201,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   backgrounds: []
   smoothing: 1
+--- !u!114 &27741248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 27741244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bda7aa1aec6dcf49bb93ee50b63191d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offsetX: 2
+  hasARightBuddy: 0
+  hasALeftBuddy: 0
+  reverseScale: 1
 --- !u!1 &149825269
 GameObject:
   m_ObjectHideFlags: 0
@@ -308,6 +324,7 @@ GameObject:
   m_Component:
   - component: {fileID: 350401384}
   - component: {fileID: 350401383}
+  - component: {fileID: 350401385}
   m_Layer: 0
   m_Name: ForegroundDirt
   m_TagString: Untagged
@@ -372,6 +389,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &350401385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 350401382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bda7aa1aec6dcf49bb93ee50b63191d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offsetX: 2
+  hasARightBuddy: 0
+  hasALeftBuddy: 0
+  reverseScale: 0
 --- !u!1 &409846999
 GameObject:
   m_ObjectHideFlags: 0
@@ -539,11 +571,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 667637641}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.43, y: -0.40999997, z: -77.54999}
+  m_LocalPosition: {x: 6.43, y: -1.91, z: 979.9}
   m_LocalScale: {x: 15, y: 10, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_Father: {fileID: 1628456306}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &667637643
 SpriteRenderer:
@@ -909,9 +941,10 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1628456302}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.5, z: -961.2}
+  m_LocalPosition: {x: 0, y: 1.5, z: -133}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 667637642}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -944,6 +977,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1960137153}
   - component: {fileID: 1960137152}
+  - component: {fileID: 1960137154}
   m_Layer: 0
   m_Name: BackgroundMountainsPurple
   m_TagString: Untagged
@@ -1008,3 +1042,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1960137154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1960137151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bda7aa1aec6dcf49bb93ee50b63191d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offsetX: 2
+  hasARightBuddy: 0
+  hasALeftBuddy: 0
+  reverseScale: 1
