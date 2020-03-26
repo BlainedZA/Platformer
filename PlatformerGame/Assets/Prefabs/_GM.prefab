@@ -81,11 +81,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a55d4486da87b34d82ce90218de21e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPrefab: {fileID: 0}
+  playerPrefab: {fileID: 400002, guid: 9e2e16a6c513f9a40adca4653f48340b, type: 2}
   spawnPoint: {fileID: 4656621857358580}
   spawnDelay: 2
-  spawnPrefab: {fileID: 4398687539650808, guid: eb90929913ed89e4db7fe2b2002cb3f5,
-    type: 2}
+  spawnPrefab: {fileID: 0}
 --- !u!114 &114666948803616508
 MonoBehaviour:
   m_ObjectHideFlags: 1

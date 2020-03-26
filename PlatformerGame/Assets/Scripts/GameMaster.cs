@@ -25,7 +25,9 @@ public class GameMaster : MonoBehaviour {
         yield return new WaitForSeconds(spawnDelay);
 
         Instantiate(playerPrefab, spawnPoint.position, spawnPoint.rotation);
-        Instantiate(spawnPrefab, spawnPoint.position, spawnPoint.rotation);
+        GameObject clone = Instantiate (spawnPrefab, spawnPoint.position, spawnPoint.rotation).gameObject;
+        Destroy(clone, 3f);
+
     }
 
     public static void KillPlayer (Player player)
