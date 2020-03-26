@@ -17,6 +17,7 @@ public class GameMaster : MonoBehaviour {
     public Transform playerPrefab;
     public Transform spawnPoint;
     public int spawnDelay = 2;
+    public Transform spawnPrefab;
 
     public IEnumerator RespawnPlayer ()
     {
@@ -24,7 +25,7 @@ public class GameMaster : MonoBehaviour {
         yield return new WaitForSeconds(spawnDelay);
 
         Instantiate(playerPrefab, spawnPoint.position, spawnPoint.rotation);
-        Debug.Log("TODO: Add spawn particles");
+        Instantiate(spawnPrefab, spawnPoint.position, spawnPoint.rotation);
     }
 
     public static void KillPlayer (Player player)
